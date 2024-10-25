@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Ip=prompt();
+        if (Ip==10){
+            console.log("The number is 10")
+        }
+        else if(Ip<=10){
+            console.log("The number is lessthan 10")
+        }
+        else if(Ip>=10){
+            console.log("The number is greaterthan 10")
+        }
+      
+        var people={
+  "Riya":"Daughter",
+  "Damini":"Mother"
+};
+for (i in people){
+  if(i=="Riya"){
+      console.log(`${Object.keys(people)[0]} is ${people["Riya"]} of ${Object.keys(people)[1]}`)
+  }
+  else if(i=="Damini"){
+      console.log(`${Object.keys(people)[1]} is the ${people["Damini"]} of ${Object.keys(people)[0]}`)
+  }
+ 
+}
+console.log(`${Object.keys(people)[0]} and ${Object.keys(people)[1]} are ${people["Damini"]} and ${people["Riya"]}`)    
+    </script>
+</body>
+</html>
